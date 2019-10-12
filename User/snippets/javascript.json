@@ -1,0 +1,232 @@
+{
+/*
+	 // Place your snippets for JavaScript here. Each snippet is defined under a snippet name and has a prefix, body and 
+	 // description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	 // $1, $2 for tab stops, ${id} and ${id:label} and ${1:label} for variables. Variables with the same id are connected.
+	 // Example:
+	 "Print to console": {
+		"prefix": "log",
+		"body": [
+			"console.log('$1');",
+			"$2"
+		],
+		"description": "Log output to console"
+	}
+*/
+	"console.log": {
+		"prefix": "clg",
+		"body": [
+			"console.log($1);"
+		],
+		"description": "console.log();"
+	},
+	"console.log with title": {
+		"prefix": "clgg",
+		"body": [
+			"console.log('$1', $1);"
+		],
+		"description": "console.log('X', X);"
+	},
+	"require": {
+		"prefix": "rq",
+		"body": [
+			"require('$1');"
+		],
+		"description": "node require"
+	},
+	"module.exports": {
+		"prefix": "mdx",
+		"body": [
+			"module.exports = $1;"
+		],
+		"description": "node's module.exports"
+	},
+	"import": {
+		"prefix": "imp",
+		"body": [
+			"import {$1} from '.$2';"
+		],
+		"description": "es6 import"
+	},
+	"function": {
+		"prefix": "fn",
+		"body": [
+			"function $1 ($2) {",
+			"\t$3",
+			"}"
+		],
+		"description": "function declaration"
+	},
+	"arrow function (multiline)": {
+		"prefix": "afn",
+		"body": [
+			"($1) => {",
+			"\t$2",
+			"}"
+		],
+		"description": "arrow function declaration"
+	},
+	"arrow function (one line)": {
+		"prefix": "afn1",
+		"body": [
+			"($1) => $2;"
+		],
+		"description": "arrow function expression"
+	},
+	"es6 shorthand method": {
+		"prefix": "nfn",
+		"body": [
+			"$1($2) {",
+			"\t$3",
+			"}"
+		],
+		"description": "named function declaration"
+	},
+	"es6 shorthand method with comma": {
+		"prefix": "nfnc",
+		"body": [
+			"($1) {",
+			"\t$2",
+			"},",
+			""
+		],
+		"description": "named function declaration with a comma"
+	},
+	"return object": {
+		"prefix": "ro",
+		"body": [
+			"return {",
+			"\t$1",
+			"};"
+		],
+		"description": "return {object} snippet"
+	},
+	"vue data function": {
+		"prefix": "vdf",
+		"body": [
+			"data () {",
+			"\treturn {",
+			"\t\t$1",
+			"\t};",
+			"},"
+		],
+		"description": "vue data function snippet"
+	},
+	"mapGetters": {
+		"prefix": "vmg",
+		"body": [
+			"import {mapGetters} from 'vuex';",
+			"...mapGetters([]),"
+		],
+		"description": "vuex mapGetters snippet"
+	},
+	"test describe": {
+		"prefix": "desc",
+		"body": [
+			"describe('$1', ($2) => {",
+			"\t$3",
+			"});"
+		],
+		"description": "test describe"
+	},
+	"test beforeEach": {
+		"prefix": "mbe",
+		"body": [
+			"beforeEach(function ($1) {",
+			"\t$2",
+			"});"
+		],
+		"description": "test beforeEach()"
+	},
+	"test afterEach": {
+		"prefix": "mae",
+		"body": [
+			"afterEach(function ($1) {",
+			"\t$2",
+			"});"
+		],
+		"description": "test afterEach()"
+	},
+	"test block": {
+		"prefix": "jt",
+		"body": [
+			"test('$1', ($2) => {",
+			"\t$3",
+			"});"
+		],
+		"description": "test block"
+	},
+	"test it": {
+		"prefix": "it",
+		"body": [
+			"it('$1', ($2) => {",
+			"\t$3",
+			"});"
+		],
+		"description": "test it"
+	},
+	"expect assertion": {
+		"prefix": "exp",
+		"body": [
+			"expect($1).to.$2"
+		],
+		"description": "expect(X).toBe(Y)"
+	},
+	"return new Promise": {
+		"prefix": "rnp",
+		"body": [
+			"return new Promise((resolve, reject) => {",
+			"\t$1",
+			"});"
+		],
+		"description": "return New Promise"
+	},
+	"iife": {
+		"prefix": "iife",
+		"body": [
+			"(() => {",
+			"\t$1",
+			"})();"
+		],
+		"description": "iife - Immediately Invoked Function Expression"
+	},
+	"iiafe": {
+		"prefix": "iiafe",
+		"body": [
+			"(async () => {",
+			"\t$1",
+			"})();"
+		],
+		"description": "iiafe - Immediately Invoked Async Function Expression"
+	},
+	"try-catch": {
+		"prefix": "trc",
+		"body": [
+			"try {",
+			"\t$1",
+			"}",
+			"catch (err) {",
+			"\t",
+			"}",
+		],
+		"description": "try-catch block"
+	},
+	"then-catch": {
+		"prefix": "thc",
+		"body": [
+			"then(($1) => {",
+			"\t$2",
+			"}, (err) => {",
+			"\t",
+			"})",
+		],
+		"description": "then-catch block"
+	},
+	"eslint-diable": {
+		"prefix": "esld",
+		"body": [
+			"/* eslint-disable */",
+		],
+		"description": "eslint disable comment"
+	},
+}

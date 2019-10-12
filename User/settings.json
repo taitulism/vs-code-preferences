@@ -1,0 +1,35 @@
+// Place your settings in this file to overwrite the default settings
+{
+    "window.zoomLevel": 0,
+    "window.showFullPath": true,
+    "workbench.sideBar.location": "left",
+    "workbench.statusBar.visible": true,
+    "editor.snippetSuggestions": "top",
+    "files.autoSave": "afterDelay",
+    "files.autoSaveDelay": 60000,
+    "files.eol": "\n",
+    "editor.minimap.enabled": true,
+    "git.enableSmartCommit": true,
+    "git.confirmSync": false,
+    "terminal.integrated.shell.windows": "C:\\WINDOWS\\Sysnative\\bash.exe",
+    "diffEditor.ignoreTrimWhitespace": false,
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "editor.lineHeight": 21,
+    "breadcrumbs.enabled": true,
+    "files.associations": {
+        "*.vue": "html"
+    },
+    "workbench.panel.defaultLocation": "right",
+    "terminal.integrated.fontSize": 12,
+    "search.collapseResults": "alwaysCollapse",
+    "jsDocCompletion.enabled": false,
+    "editor.foldingStrategy": "indentation",
+    "terminal.explorerKind": "external",
+    "workbench.tree.indent": 17,
+    "editor.suggest.snippetsPreventQuickSuggestions": false,
+    "extensions.ignoreRecommendations": true,
+    "editor.renderWhitespace": "none",
+    "editor.renderControlCharacters": false,
+    "window.menuBarVisibility": "default",
+    "workbench.editor.highlightModifiedTabs": true
+}
